@@ -4,13 +4,15 @@ CC = gcc
 
 default: all
 
-all: myecho myenv isset
+all: myecho myenv myexec isset
+
+isset: isset.c
 
 myecho: myecho.c
 
 myenv: myenv.c
 
-isset: isset.c
+myexec: myexec.c
 
 clean:
-	rm -f myecho myenv isset
+	rm -f isset myecho myenv myexec
